@@ -64,7 +64,7 @@ const AddForm = ({ employees, setEmployees, setIsAdding }) => {
           <div key={key}>
             <label htmlFor={key}>{key.charAt(0).toUpperCase() + key.slice(1)}</label>
             <input
-              type={key === "email" ? "email" : key === "salary" ? "number" : "text"}
+              type={key === "email" ? "email" : key === "salary" ? "number" :key === "date" ? "date" : "text" }
               ref={textInput}
               name={key}
               value={value}

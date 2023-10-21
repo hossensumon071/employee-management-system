@@ -49,7 +49,7 @@ const Employees = () => {
 
   return (
     <div className="container">
-      {/* list */}
+      {/* Table */}
       {!isAdding && !isEditing && (
         <div className="employe-view">
           <Header setIsAdding={setIsAdding}/>
