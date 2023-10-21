@@ -15,11 +15,11 @@ const TableView = ({ employees, handleEdit, handleDelete }) => {
       </thead>
       <tbody>
         {employees.length > 0 ? (
-          employees.map((employee, i) => (
+          employees.map((employee, index) => (
             <TableRow
               key={employee.id}
               employee={employee}
-              i={i}
+              index={index}
               handleEdit={handleEdit}
               handleDelete={handleDelete}
             />

@@ -15,12 +15,12 @@ const Employees = () => {
   const [isAdding, setIsAdding] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
 
-  const handleEdit = id => {
-    const [employee] = employees.filter(employee => employee.id === id);
-
+  const handleEdit = (id) => {
+    const employee = employees.find((employee) => employee.id === id);
+  
     setSelectedEmployee(employee);
     setIsEditing(true);
-  }
+  };
 
   const handleDelete = id => {
     Swal.fire({
